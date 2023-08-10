@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/Users/dell/Desktop/New%20folder/b.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Broject</title>
+    <link rel="stylesheet" href="./b.css">
+
+</head>
+<body>
+    <div class="contenar">
+        
+        <div class="head">
+            <h1>CRUD</h1>
+            <p>CRUD PROGRAMING FOR CEREAT,READ,UPDATE,DELEAT </p>
+        </div>
+
+
+        <div class="inputs">
+            <input id="titel" type="text" placeholder="TITEL">
+            <div class="total">
+                <input onkeyup="gettotal()" id="price" type="number" placeholder="PRICE">
+                <input onkeyup="gettotal()" id="taxes" type="number" placeholder="TAXES">
+                <input onkeyup="gettotal()" id="adds" type="number" placeholder="ADDS">
+                <input onkeyup="gettotal()" id="discount" type="number" placeholder="DISCOUNT">
+                <small id="total"></small>
+            </div>
+            <input id="datee" type="text" placeholder="Date">
+            <input id="count" type="text" placeholder="COUNT">
+            <input id="category" type="text" placeholder="CATEGORY">
+            <button id="submit">CEREAT</button>
+
+            
+
+
+        </div>
+        <div class="outputs">
+            <input id="search" onkeyup="searchData(this.value)" type="text" placeholder="search by titel">
+            <div class="btnsearch">
+                <button onclick=" getsereachmood(this.id)" id="searchtitel">SEARCH BY TITLE</button>
+                <button onclick=" getsereachmood(this.id)" id="searchcategory">SEARCH BY CATEGORY</button>
+           </div>
+
+
+
+
+        </div>
+
+         <div id="ptndeleatall"></div>
+        <table>
+            <tbody><tr>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>PRICE</th>
+                <th>TAXS</th>
+                <th>ADDS</th>
+                <th>DISCOUNT</th>
+                <th>TOTAL</th>
+                <th>Date</th>
+                <th>CATEGORY</th>
+                <th>UPDATE</th>
+                <th>DELEAT</th>
+
+            </tr>
+            </tbody><tbody id="tabel"></tbody>
+
+        </table>
+
+    </div>
+        <script src="./B.JS"></script>
+
+</body></html>
